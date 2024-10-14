@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<th:block th:replace="include/head-meta-fragment :: head-mata"></th:block>
+<body>
+    <script th:inline="javascript">
+
+    </script>
+    <th:block th:replace="include/header-fragment :: header"></th:block>
+    <main class="main-block">
+        <div class="title-info">
+            WeDug에 관한 <p>
+            모든 것
+        </div>
+        <div class="service-info first">
+            <div class="text-container">
+                <p>여행을 더욱 특별하게 <br> 만들어줄 덕후들의 천국</p>
+            </div>
+            <div class="image-container">
+                <img src="/images/icons/carrier.png" alt="Carrier Image">
+            </div>
+        </div>
+        <div class="service-info second">
+            <div class="text-container">
+                <p>TV 속 영화와 드라마의 촬영지<br>
+                    연예인들이 다녀간<br>
+                    핫플레이스, 맛집, 명소 등을<br>
+                    한눈에
+                </p>
+            </div>
+            <div class="image-container">
+                <img src="/images/icons/location.png" alt="Location Image">
+            </div>
+        </div>
+    </main>
+    <th:block th:replace="include/navbar-fragment :: navbar"></th:block>
+    <th:block th:replace="include/footer-fragment :: footer"></th:block>
+</body>
+</html>
